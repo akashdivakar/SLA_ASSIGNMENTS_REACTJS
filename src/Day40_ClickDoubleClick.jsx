@@ -1,3 +1,4 @@
+// Assignment: Project 4 (React Event Handling - Day 40) - Task 2: Display Input on Click / Double Click
 import { useState } from "react";
 
 function ClickDoubleClick() {

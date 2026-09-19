@@ -1,3 +1,4 @@
+// Assignment: Project 4 (React Event Handling - Day 40) - Task 1: Display Input on Submit Button Click
 import { useState } from "react";
 
 function SubmitInput() {

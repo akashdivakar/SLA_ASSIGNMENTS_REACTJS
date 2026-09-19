@@ -1,3 +1,4 @@
+// Assignment: Project 2 (Components & Props - Day 38) - Task 2: Reusable Buttons
 import { useState } from "react";
 
 function Button({ color, size, children }) {

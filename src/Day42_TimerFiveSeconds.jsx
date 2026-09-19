@@ -1,3 +1,4 @@
+// Assignment: Project 6 (React useEffect Hook - Day 42) - Task 3: Timer (Increases Every 5 Seconds)
 import { useState, useEffect } from "react";
 
 function TimerFiveSeconds() {

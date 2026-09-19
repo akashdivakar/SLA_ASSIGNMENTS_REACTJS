@@ -1,3 +1,4 @@
+// Assignment: Project 1 (Basic Components) - Task 2: Product Details
 function Product() {
   const product = {
     name: "Laptop",

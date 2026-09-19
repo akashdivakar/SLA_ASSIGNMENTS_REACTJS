@@ -1,3 +1,4 @@
+// Assignment: Project 6 (React useEffect Hook - Day 42) - Task 5: useEffect on Input Change
 import { useState, useEffect } from "react";
 
 function InputEffect() {

@@ -1,3 +1,4 @@
+// Assignment: Project 4 (React Event Handling - Day 40) - Task 5: Display Input on Lost Focus (onBlur)
 import { useState } from "react";
 
 function LostFocusInput() {

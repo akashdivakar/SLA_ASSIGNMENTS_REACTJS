@@ -1,3 +1,4 @@
+// Assignment: Project 8 (React Tailwind CSS - Day 44) - Task 3: Product Page with 6 Cards (Tailwind CSS)
 import { useState } from "react";
 
 function TailwindProductPage() {

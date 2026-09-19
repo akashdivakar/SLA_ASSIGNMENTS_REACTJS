@@ -1,3 +1,4 @@
+// Assignment: Project 7 (React Router DOM - Day 43) - Task 2: About Page Route
 function About() {
   return (
     <div>

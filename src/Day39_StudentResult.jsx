@@ -1,3 +1,4 @@
+// Assignment: Project 3 (Prop Children - Day 39) - Task 2: Student Result (Conditional Rendering)
 import { useState } from "react";
 
 function StudentResult() {

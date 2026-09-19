@@ -1,3 +1,4 @@
+// Assignment: Project 6 (React useEffect Hook - Day 42) - Task 4: Fetch User Details from API on Load
 import { useState, useEffect } from "react";
 
 function FetchUsers() {

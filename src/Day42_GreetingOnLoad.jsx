@@ -1,3 +1,4 @@
+// Assignment: Project 6 (React useEffect Hook - Day 42) - Task 1: Greeting Message on Load (One Time)
 import { useState, useEffect } from "react";
 
 function GreetingOnLoad() {

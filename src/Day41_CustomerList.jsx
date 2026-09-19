@@ -1,3 +1,4 @@
+// Assignment: Project 5 (React State Management - Day 41) - Task 3: State with Array (Add & Delete Customer)
 import { useState } from "react";
 
 function CustomerList() {

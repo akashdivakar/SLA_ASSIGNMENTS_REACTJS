@@ -1,3 +1,4 @@
+// Assignment: Project 5 (React State Management - Day 41) - Task 2: State Object (Product Information)
 import { useState } from "react";
 
 function ProductStateObject() {

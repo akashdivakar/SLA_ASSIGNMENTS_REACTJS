@@ -1,3 +1,4 @@
+// Assignment: Project 3 (Prop Children - Day 39) - Task 3: Product Availability (&& Operator)
 function ProductAvailability() {
   const isAvailable = true;
 

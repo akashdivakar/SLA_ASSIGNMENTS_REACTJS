@@ -1,3 +1,4 @@
+// Assignment: Project 6 (React useEffect Hook - Day 42) - Task 2: Update Document Title on Count Change
 import { useState, useEffect } from "react";
 
 function DocumentTitleCount() {

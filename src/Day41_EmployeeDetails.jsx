@@ -1,3 +1,4 @@
+// Assignment: Project 5 (React State Management - Day 41) - Task 1: Multiple State Variables (Employee Details)
 import { useState } from "react";
 
 function EmployeeDetails() {

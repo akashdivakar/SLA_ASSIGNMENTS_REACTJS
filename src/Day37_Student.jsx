@@ -1,3 +1,4 @@
+// Assignment: Project 1 (Basic Components) - Task 1: Student Details
 function Student() {
   const student = {
     name: "Akash",

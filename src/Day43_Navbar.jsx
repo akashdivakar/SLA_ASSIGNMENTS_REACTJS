@@ -1,3 +1,4 @@
+// Assignment: Project 7 (React Router DOM - Day 43) - Task 1: Reusable Navbar Component
 import { Link } from "react-router-dom";
 
 function Navbar() {

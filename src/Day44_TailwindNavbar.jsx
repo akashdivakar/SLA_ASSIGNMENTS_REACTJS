@@ -1,3 +1,4 @@
+// Assignment: Project 8 (React Tailwind CSS - Day 44) - Task 2: Responsive Navbar (Tailwind CSS)
 import { useState } from "react";
 
 function TailwindNavbar() {

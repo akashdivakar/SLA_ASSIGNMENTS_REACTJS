@@ -1,3 +1,4 @@
+// Assignment: Project 4 (React Event Handling - Day 40) - Task 4: Handle Multiple Events
 import { useState } from "react";
 
 function MultipleEvents() {
