@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 function Button({ color, size, children }) {
+  const [clicked, setClicked] = useState(false);
+
   let padding = "8px 16px";
   let fontSize = "14px";
 
@@ -14,19 +18,19 @@ function Button({ color, size, children }) {
   }
 
   const buttonStyle = {
-    backgroundColor: color,
+    backgroundColor: clicked ? "#333" : color,
     color: "white",
     padding: padding,
     fontSize: fontSize,
     border: "none",
     borderRadius: "4px",
     margin: "5px",
-    cursor: "pointer"
+    cursor: "pointer",
   };
 
   return (
-    <button style={buttonStyle}>
-      {children}
+    <button style={buttonStyle} onClick={() => setClicked(!clicked)}>
+      {clicked ? `${children} (Clicked!)` : children}
     </button>
   );
 }
