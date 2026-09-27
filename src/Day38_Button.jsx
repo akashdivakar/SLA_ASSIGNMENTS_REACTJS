@@ -1,39 +1,56 @@
-// Assignment: Project 2 (Components & Props - Day 38) - Task 2: Reusable Buttons
-import { useState } from "react";
+import {useState} from "react"
 
-function Button({ color, size, children }) {
-  const [clicked, setClicked] = useState(false);
+function Button({color,size,children}){
 
-  let padding = "8px 16px";
-  let fontSize = "14px";
 
-  if (size === "small") {
-    padding = "5px 10px";
-    fontSize = "12px";
-  } else if (size === "medium") {
-    padding = "10px 20px";
-    fontSize = "16px";
-  } else if (size === "large") {
-    padding = "15px 30px";
-    fontSize = "20px";
-  }
+const [click,setClick]=useState(false);
 
-  const buttonStyle = {
-    backgroundColor: clicked ? "#333" : color,
-    color: "white",
-    padding: padding,
-    fontSize: fontSize,
-    border: "none",
-    borderRadius: "4px",
-    margin: "5px",
-    cursor: "pointer",
-  };
+var padding="18px";
+var fontSize="5px";
 
-  return (
-    <button style={buttonStyle} onClick={() => setClicked(!clicked)}>
-      {clicked ? `${children} (Clicked!)` : children}
-    </button>
-  );
+if(size==="large"){
+
+padding="20px";
+fontSize="30px";
+
 }
 
+else if(size==="medium"){
+
+padding="15px";
+fontSize="20px";
+
+}
+
+else if(size==="small"){
+
+padding="10px";
+fontSize="10px";
+}
+
+const buttonstyle={
+backgroundColor:click ? "white":color,
+padding:padding,
+fontSize:fontSize,
+border:"none",
+borderRadius:"4px",
+color:"blue",
+
+}
+
+return (
+
+<button style={buttonstyle} onClick={() =>setClick(!click)}>
+{click?`${children} hello`:children}
+
+</button>
+
+
+)
+
+}
+
+
 export default Button;
+
+

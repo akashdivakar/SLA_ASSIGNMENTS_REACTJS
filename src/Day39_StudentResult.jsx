@@ -1,42 +1,55 @@
-// Assignment: Project 3 (Prop Children - Day 39) - Task 2: Student Result (Conditional Rendering)
-import { useState } from "react";
 
-function StudentResult() {
-  const [marks, setMarks] = useState(75);
+import {useState} from "react"
+function StudentResult(){
+const[mark,setMark]=useState(75);
 
-  let result = "";
+let result="";
 
-  if (marks >= 90 && marks <= 100) {
-    result = "Excellent";
-  } else if (marks >= 60 && marks <= 89) {
-    result = "Passed";
-  } else if (marks >= 40 && marks <= 59) {
-    result = "Needs Improvement";
-  } else {
-    result = "Failed";
-  }
+if(mark>90 && mark<100){
 
-  return (
-    <div>
-      <h3>Student Result</h3>
-      <p>Marks: {marks}</p>
-      <p>Status: {result}</p>
-      <div style={{ marginTop: "8px" }}>
-        <button onClick={() => setMarks(95)}>
-          {marks === 95 ? "Set 95 (Active ✓)" : "Set 95 (Excellent)"}
-        </button>{" "}
-        <button onClick={() => setMarks(75)}>
-          {marks === 75 ? "Set 75 (Active ✓)" : "Set 75 (Passed)"}
-        </button>{" "}
-        <button onClick={() => setMarks(50)}>
-          {marks === 50 ? "Set 50 (Active ✓)" : "Set 50 (Improvement)"}
-        </button>{" "}
-        <button onClick={() => setMarks(30)}>
-          {marks === 30 ? "Set 30 (Active ✓)" : "Set 30 (Failed)"}
-        </button>
-      </div>
-    </div>
-  );
+result="perfect";
+
+}else if(mark>80 && mark<89){
+
+result="improvement";
+
+}else if(mark>70 && mark<79){
+
+result="average";
+
+}else if(mark>60 && mark<69){
+
+result="fail";
+
+}
+
+
+
+return(
+
+<>
+<p>{mark}</p>
+
+<p>{result}</p>
+
+<button onClick={()=>setMark(75)}>
+
+{mark==75 ? "hello Active":"Deactive"};
+
+</button>
+
+<button onClick={()=>setMark(80)}>
+
+{mark==80 ? "good Active" :"bad mark"};
+
+</button>
+
+
+</>
+
+)
+
+
 }
 
 export default StudentResult;

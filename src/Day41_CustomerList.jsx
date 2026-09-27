@@ -1,46 +1,54 @@
-// Assignment: Project 5 (React State Management - Day 41) - Task 3: State with Array (Add & Delete Customer)
-import { useState } from "react";
+import {useState} from "react";
 
-function CustomerList() {
-  const [customers, setCustomers] = useState(["Alice", "Bob", "Charlie"]);
-  const [customerName, setCustomerName] = useState("");
-  const [btnText, setBtnText] = useState("Add Customer");
+function CustomerList(){
 
-  const handleAddCustomer = () => {
-    if (customerName.trim() !== "") {
-      setCustomers([...customers, customerName]);
-      setCustomerName("");
-      setBtnText("Added! ✓");
-      setTimeout(() => setBtnText("Add Customer"), 1500);
-    }
-  };
+const [customer,setCustomer]=useState(["akash","divakar","ramesh"]);
 
-  const handleDeleteCustomer = (indexToDelete) => {
-    const updatedList = customers.filter((_, index) => index !== indexToDelete);
-    setCustomers(updatedList);
-  };
+const[customername,setCustomername]=useState("");
 
-  return (
-    <div>
-      <h3>3. Customer List (useState with Array)</h3>
-      <input
-        type="text"
-        placeholder="Enter customer name..."
-        value={customerName}
-        onChange={(e) => setCustomerName(e.target.value)}
-      />{" "}
-      <button onClick={handleAddCustomer}>{btnText}</button>
+const[success,setSuccess]=useState("Add data");
 
-      <ul>
-        {customers.map((customer, index) => (
-          <li key={index}>
-            {customer}{" "}
-            <button onClick={() => handleDeleteCustomer(index)}>🗑️ Delete</button>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+function handlechange(){
+
+if(customername.trim() !== ""){
+
+setCustomer([...customer,customername]);
+setCustomername("");
+setSuccess("Add data successfully"); 
+
+}
+
+}
+
+const handledelete=(indexvalue)=>{
+  const update=customer.filter((_,index)=>index !== indexvalue);
+
+  setCustomer(update);
+}
+
+return(
+<>
+
+<input type="text" value={customername} onChange={(e)=> setCustomername(e.target.value)} />
+
+
+<button onClick={handlechange} > {success}</button>
+
+{customer.map((customer,index)=>(
+
+<li key={index}>
+{customer}
+
+<button onClick={()=> handledelete(index)}>delete</button>
+</li>
+
+))}
+
+</>
+
+)
+
 }
 
 export default CustomerList;
+

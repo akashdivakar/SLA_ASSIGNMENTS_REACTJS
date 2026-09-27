@@ -29,10 +29,16 @@ import Contact from "./pages/Day43_Contact";
 import TailwindProfileCard from "./Day44_TailwindProfileCard";
 import TailwindNavbar from "./Day44_TailwindNavbar";
 import TailwindProductPage from "./Day44_TailwindProductPage";
+import MuiButtonsAndTypography from "./Day45_MuiButtonsAndTypography";
+import MuiFormElements from "./Day45_MuiFormElements";
+import MuiLayoutAndCards from "./Day45_MuiLayoutAndCards";
+import LoginForm from "./Day45_LoginForm";
+import Gt from "./Hello.jsx";
 
 function App() {
   return (
     <div style={{ padding: "20px", fontFamily: "sans-serif" }}>
+      <Gt/>
      
       <h1>Project 1: Basic Components</h1>
 
@@ -55,9 +61,11 @@ function App() {
       <h1>Project 2: Components & Props (Day 38)</h1>
 
       <h2>Task 1: Profile Cards</h2>
-      <ProfileCard name="John" age={25} role="Developer">
-        <p>Likes React and JavaScript.</p>
-      </ProfileCard>
+     <ProfileCard  name="akash" age={15}  role="my role is developer">
+
+<p> how are you</p>
+
+</ProfileCard>
 
       <ProfileCard name="Sarah" age={28} role="UI/UX Designer">
         <p>Passionate about Figma and user interfaces.</p>
@@ -69,16 +77,16 @@ function App() {
       <hr />
 
       <h2>Task 2: Reusable Buttons</h2>
-      <Button color="blue" size="large">
-        Submit
-      </Button>
-      <Button color="green" size="medium">
-        Save
-      </Button>
-      <Button color="red" size="small">
-        Delete
-      </Button>
-
+   <Button size="large" color="blue">
+submit
+</Button>
+<Button size="medium" color="red">
+delete
+</Button>
+<Button size="small" color="white">
+update
+</Button>
+  
       <br />
       <hr style={{ border: "2px solid #000" }} />
       <br />
@@ -214,6 +222,27 @@ function App() {
 
       <h2>Task 3: Product Page with 6 Cards (Tailwind CSS)</h2>
       <TailwindProductPage />
+
+      <br />
+      <hr style={{ border: "2px solid #000" }} />
+      <br />
+
+      <h1>Project 9: Styling with MUI (Material UI)</h1>
+
+      <h2>Task 1: MUI Typography, Buttons & Icons</h2>
+      <MuiButtonsAndTypography />
+      <hr />
+
+      <h2>Task 2: MUI Form Elements (TextField, Select, Checkbox)</h2>
+      <MuiFormElements />
+      <hr />
+
+      <h2>Task 3: MUI Layouts, Box, Cards, Grid & Alerts</h2>
+      <MuiLayoutAndCards />
+      <hr />
+
+      <h2>Task 4: MUI Complete Login Form</h2>
+      <LoginForm />
     </div>
   );
 }

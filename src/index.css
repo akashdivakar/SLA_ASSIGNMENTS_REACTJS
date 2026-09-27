@@ -110,8 +110,8 @@ code {
   background: var(--code-bg);
 }
 
-/* Ensure buttons always look like real, styled buttons */
-button:not([class*="bg-"]) {
+/* Ensure buttons always look like real, styled buttons (excluding MUI buttons) */
+button:not([class*="bg-"]):not([class*="Mui"]) {
   background-color: #2563eb;
   color: #ffffff;
   border: 1px solid #1d4ed8;
@@ -125,7 +125,7 @@ button:not([class*="bg-"]) {
   transition: all 0.2s ease-in-out;
 }
 
-button:not([class*="bg-"]):hover {
+button:not([class*="bg-"]):not([class*="Mui"]):hover {
   background-color: #1d4ed8;
 }
 
@@ -133,8 +133,8 @@ button:active {
   transform: scale(0.97);
 }
 
-/* Ensure inputs are clearly visible and styled */
-input[type="text"] {
+/* Ensure inputs are clearly visible and styled (excluding MUI inputs) */
+input[type="text"]:not([class*="Mui"]) {
   background-color: #ffffff;
   color: #111827;
   border: 1px solid #9ca3af;
@@ -145,7 +145,7 @@ input[type="text"] {
   outline: none;
 }
 
-input[type="text"]:focus {
+input[type="text"]:not([class*="Mui"]):focus {
   border-color: #2563eb;
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25);
 }

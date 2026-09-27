@@ -1,38 +1,51 @@
-// Assignment: Project 4 (React Event Handling - Day 40) - Task 2: Display Input on Click / Double Click
-import { useState } from "react";
+import {useState} from "react";
 
-function ClickDoubleClick() {
-  const [inputText, setInputText] = useState("");
-  const [displayText, setDisplayText] = useState("");
-  const [buttonLabel, setButtonLabel] = useState("Click or Double Click Me");
+function ClickDoubleClick(){
 
-  const handleClick = () => {
-    setDisplayText(inputText);
-    setButtonLabel("Single Clicked! (Click again or Double click)");
-  };
+const [input,setInput]=useState("");
+const [display,setDisplay]=useState("");
+const [submit,setSubmit]=useState("setclick");
 
-  const handleDoubleClick = () => {
-    setDisplayText(inputText);
-    setButtonLabel("Double Clicked! ⚡");
-  };
+const handleclick=()=>{
 
-  return (
-    <div>
-      <h3>2. Display Input on Click / Double Click</h3>
-      <input
-        type="text"
-        placeholder="Enter text..."
-        value={inputText}
-        onChange={(e) => setInputText(e.target.value)}
-      />
-      <br />
-      <br />
-      <button onClick={handleClick} onDoubleClick={handleDoubleClick}>
-        {buttonLabel}
-      </button>
-      <p>Output: {displayText}</p>
-    </div>
-  );
+
+
+setDisplay(input);
+
+setSubmit("single click");
+
+}
+
+const handledoubleclick=()=>{
+
+setDisplay(input);
+
+setSubmit("Double click");
+}
+
+
+
+return(
+<>
+
+
+<input type="text" value={input} onChange={(e)=>setInput(e.target.value)}/>
+
+<button  onClick={handleclick} onDoubleClick={ handledoubleclick}>
+
+{submit}
+<p>{display}</p>
+
+
+</button>
+
+
+
+</>
+
+)
+
+
 }
 
 export default ClickDoubleClick;

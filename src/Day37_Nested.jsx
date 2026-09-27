@@ -1,20 +1,22 @@
-// Assignment: Project 1 (Basic Components) - Task 3: Nested Components
-function Child() {
-  return (
-    <div>
-      <h3>This is a Child Component</h3>
-      <p>I am nested inside the parent component.</p>
-    </div>
-  );
+function Child(){
+
+return(
+
+<>
+<p>hello im akash</p>
+<h1>My name is divakar</h1>
+
+</>
+)
+
 }
 
-function Nested() {
-  return (
-    <div>
-      <h2>Nested Component</h2>
-      <Child />
-    </div>
-  );
+function Nested(){
+return(
+<>
+<p>HELLO WORLD</p>
+<Child/>
+</>
+)
 }
-
 export default Nested;

@@ -1,21 +1,23 @@
-// Assignment: Project 1 (Basic Components) - Task 1: Student Details
-function Student() {
-  const student = {
-    name: "Akash",
-    age: 22,
-    course: "React JS",
-    city: "Chennai"
-  };
+function Student(){
 
-  return (
-    <div>
-      <h2>Student Details</h2>
-      <p>Name: {student.name}</p>
-      <p>Age: {student.age}</p>
-      <p>Course: {student.course}</p>
-      <p>City: {student.city}</p>
-    </div>
-  );
+const student={
+   name:"akash",
+   age:15,
+   course:"BE",
+   city:"chennai"
 }
 
-export default Student;
+return(
+<>
+
+<h1>Name:{student.name}</h1>
+<p>AGE:{student.age}</p>
+<p>COURSE:{student.course}</p>
+<p>CITY:{student.city}</p>
+</>
+
+)
+
+}
+
+export default Student
